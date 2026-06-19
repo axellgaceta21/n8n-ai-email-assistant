@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Email Assistant | n8n Portfolio by: Axell G.</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="./images/logo.png">
+  </head>
+  <body>
+    <!-- ================= HERO ================= -->
+    <section class="hero">
+      <div class="hero-bg"></div>
+      <div class="container">
+        <div class="eyebrow"> AI AUTOMATION PORTFOLIO </div>
+        <h1> AI Email Assistant <span>for CCR Connects</span>
+        </h1>
+        <p class="hero-desc"> Automating customer support using <strong>n8n</strong>, <strong>OpenAI</strong>, <strong>Gmail</strong> and live website knowledge extraction. </p>
+        <div class="tech-stack">
+          <div class="pill">n8n</div>
+          <div class="pill">OpenAI</div>
+          <div class="pill">Gmail API</div>
+          <div class="pill">AI Agent</div>
+          <div class="pill">HTML Email</div>
+          <div class="pill">Website Extraction</div>
+        </div>
+        <!-- MAIN SCREENSHOT -->
+        <div class="hero-image">
+          <img src="images/main.png" alt="n8n Workflow">
+        </div>
+        <!-- STATS -->
+        <div class="hero-stats">
+          <div class="stat-card">
+            <h2>7</h2>
+            <p>Workflow Nodes</p>
+          </div>
+          <div class="stat-card">
+            <h2>1</h2>
+            <p>AI Agent</p>
+          </div>
+          <div class="stat-card">
+            <h2>Live</h2>
+            <p>Website Extraction</p>
+          </div>
+          <div class="stat-card">
+            <h2>JSON</h2>
+            <p>Structured Output</p>
+          </div>
+        </div>
+        <a href="#footer" class="scroll-down"> ↓ </a>
+      </div>
+    </section>
+    <!-- ================= OVERVIEW ================= -->
+    <section class="overview">
+      <div class="container">
+        <div class="section-title">
+          <span>PROJECT OVERVIEW</span>
+          <h2>Building Smarter Customer Support Using AI</h2>
+        </div>
+        <div class="overview-grid">
+          <div class="overview-card">
+            <div class="icon"> ⚠️ </div>
+            <h3>Problem</h3>
+            <p> Business owners spend hours manually reading, categorizing and replying to emails. This repetitive process slows response times and reduces productivity. </p>
+          </div>
+          <div class="overview-card">
+            <div class="icon"> 🤖 </div>
+            <h3>Solution</h3>
+            <p> An AI-powered email assistant that reads emails, extracts company knowledge from the website, classifies customer intent, and drafts professional responses automatically. </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ================= WORKFLOW ================= -->
+    <section class="workflow">
+      <div class="container">
+        <div class="section-title">
+          <span>WORKFLOW ARCHITECTURE</span>
+          <h2>Automation Flow</h2>
+        </div>
+        <div class="flowchart">
+          <div class="flow-node">
+            <div class="node-number">01</div>
+            <h3>Gmail Trigger</h3>
+          </div>
+          <div class="flow-line"></div>
+          <div class="flow-node">
+            <div class="node-number">02</div>
+            <h3>HTTP Request</h3>
+          </div>
+          <div class="flow-line"></div>
+          <div class="flow-node">
+            <div class="node-number">03</div>
+            <h3>HTML Extract</h3>
+          </div>
+          <div class="flow-line"></div>
+          <div class="flow-node">
+            <div class="node-number">04</div>
+            <h3>Edit Fields</h3>
+          </div>
+          <div class="flow-line"></div>
+          <div class="flow-node ai-highlight">
+            <div class="node-number">05</div>
+            <h3>AI Agent</h3>
+          </div>
+          <div class="flow-line"></div>
+          <div class="flow-node">
+            <div class="node-number">06</div>
+            <h3>Edit Fields</h3>
+          </div>
+          <div class="flow-line"></div>
+          <div class="flow-node">
+            <div class="node-number">07</div>
+            <h3>Gmail Draft</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ================= STEP 1 ================= -->
+    <section class="step-section">
+      <div class="container">
+        <div class="step-grid">
+          <div class="step-image">
+            <img src="images/step1.png">
+          </div>
+          <div class="step-content">
+            <span class="step-label"> STEP 1 </span>
+            <h2> Gmail Trigger </h2>
+            <p> Automatically listens for new incoming emails. </p>
+            <ul>
+              <li>Extract Subject</li>
+              <li>Extract Sender Email</li>
+              <li>Extract Email Body</li>
+              <li>Real-time Monitoring</li>
+            </ul>
+            <pre>
+{
+"subject":"Internet Installation Inquiry",
+
+"sender":"customer@email.com",
+
+"body":"When can my internet be installed?"
+}
+</pre>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ================= STEP 2 ================= -->
+    <section class="step-section dark">
+      <div class="container">
+        <div class="step-grid reverse">
+          <div class="step-content">
+            <span class="step-label"> STEP 2 </span>
+            <h2> HTTP Request </h2>
+            <p> Fetches the company website to provide the AI with up-to-date business information. </p>
+            <ul>
+              <li>GET Request</li>
+              <li>Returns Website HTML</li>
+              <li>Live Knowledge Source</li>
+              <li>No Hardcoded Data</li>
+            </ul>
+          </div>
+          <div class="step-image">
+            <img src="images/step2.png">
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ================= STEP 3 ================= -->
+    <section class="step-section">
+      <div class="container">
+        <div class="step-grid">
+          <div class="step-image">
+            <img src="images/step3.png">
+          </div>
+          <div class="step-content">
+            <span class="step-label"> STEP 3 </span>
+            <h2> HTML Extract </h2>
+            <p> Extracts readable information from the website. </p>
+            <ul>
+              <li>Pure Fiber Internet</li>
+              <li>Unlimited Internet Plans</li>
+              <li>WiFi Hotspots</li>
+              <li>Free Installation</li>
+              <li>Technical Support</li>
+              <li>PisoWiFi Solutions</li>
+            </ul>
+            <pre>
+{
+"website_text":
+
+"Pure Fiber Internet,
+
+Unlimited Internet Plans,
+
+WiFi Hotspots,
+
+Free Installation..."
+}
+</pre>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ================= STEP 4 ================= -->
+    <section class="step-section dark">
+      <div class="container">
+        <div class="step-grid reverse">
+          <div class="step-content">
+            <span class="step-label"> STEP 4 </span>
+            <h2> Edit Fields </h2>
+            <p> Combines email data and website information into a single payload for the AI Agent. </p>
+            <ul>
+              <li>Email Subject</li>
+              <li>Sender</li>
+              <li>Email Body</li>
+              <li>Website Content</li>
+              <li>Structured Payload</li>
+            </ul>
+            <pre>
+{
+"subject":"...",
+
+"sender":"...",
+
+"body":"...",
+
+"website":"Company services..."
+}
+</pre>
+          </div>
+          <div class="step-image">
+            <img src="images/step4.png">
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ================= STEP 5 ================= -->
+    <section class="step-section ai-section">
+      <div class="container">
+        <div class="step-grid">
+          <div class="step-image">
+            <img src="images/step5.png">
+          </div>
+          <div class="step-content">
+            <span class="step-label"> STEP 5 </span>
+            <h2> AI Agent (OpenAI) </h2>
+            <p> Acts as an AI customer support representative. Uses website knowledge and customer email context to generate intelligent responses. </p>
+            <ul>
+              <li>Summarize Email</li>
+              <li>Categorize Intent</li>
+              <li>Use Website Knowledge</li>
+              <li>Generate Reply</li>
+              <li>Return JSON Output</li>
+            </ul>
+            <pre>
+{
+"summary":
+
+"Customer is asking about installation schedule.",
+
+"category":
+
+"Installation Scheduling",
+
+"reply":
+
+"Thank you for contacting us..."
+}
+</pre>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ================= STEP 6 ================= -->
+    <section class="step-section dark">
+      <div class="container">
+        <div class="step-grid reverse">
+          <div class="step-content">
+            <span class="step-label"> STEP 6 </span>
+            <h2> Response Formatting </h2>
+            <p> Formats the AI response before sending it to Gmail. </p>
+            <ul>
+              <li>Preserve line breaks</li>
+              <li>HTML-safe text</li>
+              <li>Email Template</li>
+              <li>Responsive Formatting</li>
+            </ul>
+          </div>
+          <div class="step-image">
+            <img src="images/step6.png">
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ================= STEP 7 ================= -->
+    <section class="step-section">
+      <div class="container">
+        <div class="step-grid">
+          <div class="step-image">
+            <img src="images/step7.png">
+          </div>
+          <div class="step-content">
+            <span class="step-label"> STEP 7 </span>
+            <h2> Gmail Draft Message </h2>
+            <p> Drafts a professional branded email ready for human review. </p>
+            <ul>
+              <li>Human Review</li>
+              <li>Company Logo</li>
+              <li>Responsive Design</li>
+              <li>Service Icons</li>
+              <li>Professional Signature</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ================= WEBSITE KNOWLEDGE ================= -->
+    <section class="knowledge">
+      <div class="container">
+        <div class="section-title">
+          <span>LIVE WEBSITE EXTRACTION</span>
+          <h2> AI Learns Directly From The Company Website </h2>
+          <p> Instead of hardcoding company information, the AI fetches and extracts website content dynamically. </p>
+        </div>
+        <pre class="big-json">
+{
+
+"website_text":
+
+"Pure Fiber Internet,
+
+Unlimited Internet Plans,
+
+WiFi Hotspots,
+
+Free Installation,
+
+Technical Support,
+
+PisoWiFi Solutions"
+
+}
+</pre>
+        <div class="knowledge-grid">
+          <div class="feature-card">
+            <h3> Always Updated </h3>
+            <p> Website changes are reflected automatically in AI responses. </p>
+          </div>
+          <div class="feature-card">
+            <h3> No Hardcoded Data </h3>
+            <p> AI uses live business information instead of static prompts. </p>
+          </div>
+          <div class="feature-card">
+            <h3> Smarter Responses </h3>
+            <p> Better context means fewer hallucinations and more accurate replies. </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ================= AI OUTPUT ================= -->
+    <section class="ai-output">
+      <div class="container">
+        <div class="section-title">
+          <span>AI OUTPUT</span>
+          <h2> Structured JSON Response </h2>
+        </div>
+        <pre class="big-json">
+{
+
+"summary": "Customer is asking about installation schedule.",
+"category": "Installation Scheduling",
+"reply": "Thank you for contacting us. We'd be happy to assist with your installation schedule."
+
+}
+</pre>
+      </div>
+    </section>
+    <!-- ================= FEATURES ================= -->
+    <section class="features">
+      <div class="container">
+        <div class="section-title">
+          <span>KEY FEATURES</span>
+          <h2> Portfolio Highlights </h2>
+        </div>
+        <div class="stats-grid">
+          <div class="feature-stat">
+            <h2> 24/7 </h2>
+            <p> AI Customer Support </p>
+          </div>
+          <div class="feature-stat">
+            <h2> 100% </h2>
+            <p> Automatic Classification </p>
+          </div>
+          <div class="feature-stat">
+            <h2> Live </h2>
+            <p> Website Knowledge </p>
+          </div>
+          <div class="feature-stat">
+            <h2> JSON </h2>
+            <p> Structured Output </p>
+          </div>
+        </div>
+        <div class="feature-list">
+          <div class="feature-card">
+            <h3> AI-Powered Email Classification </h3>
+            <p> Automatically routes emails into business categories. </p>
+          </div>
+          <div class="feature-card">
+            <h3> Website Knowledge Extraction </h3>
+            <p> Reads company website content and uses it as AI context. </p>
+          </div>
+          <div class="feature-card">
+            <h3> Automated Customer Support </h3>
+            <p> Generates professional replies instantly. </p>
+          </div>
+          <div class="feature-card">
+            <h3> Branded HTML Emails </h3>
+            <p> Responsive email templates matching company branding. </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ================= TECHNOLOGIES ================= -->
+    <section class="tech">
+      <div class="container">
+        <div class="section-title">
+          <span>TECH STACK</span>
+          <h2> Technologies Used </h2>
+        </div>
+        <div class="badge-container">
+          <div class="badge">n8n</div>
+          <div class="badge">OpenAI API</div>
+          <div class="badge">Gmail API</div>
+          <div class="badge">HTTP Request</div>
+          <div class="badge">HTML Extract</div>
+          <div class="badge">Edit Fields</div>
+          <div class="badge">AI Agent</div>
+          <div class="badge">HTML Email</div>
+          <div class="badge">HTML</div>
+          <div class="badge">CSS</div>
+          <div class="badge">VS Code</div>
+          <div class="badge">GitHub</div>
+          <div class="badge">Vercel</div>
+        </div>
+      </div>
+    </section>
+    <!-- ================= FOOTER ================= -->
+    <footer id="footer">
+      <div class="container">
+        <img src="images/logo.png" class="footer-logo">
+        <h2> Made by <span> Axell Gaceta </span>
+        </h2>
+        <p> Web Developer • AI Automation Builder </p>
+        <div class="footer-buttons">
+          <a href="https://axell-builds.lovable.app/#home" class="footer-btn">
+            <span class="icon"> 💼 </span> Portfolio </a>
+          <a href="#" class="footer-btn primary">
+            <span class="icon"> 📅 </span> Book a Discovery Call </a>
+          <a href="https://github.com/" class="footer-btn">
+            <span class="icon"> 💻 </span> GitHub </a>
+          <a href="mailto:your@email.com" class="footer-btn">
+            <span class="icon"> ✉️ </span> Email </a>
+        </div>
+        <small> © 2026 Axell Gaceta • Built using n8n • OpenAI • Gmail API • HTML • CSS • Gmail </small>
+      </div>
+    </footer>
+    <a href="#" class="scroll-top"> ↑ <script>
+        const scrollTopBtn = document.querySelector('.scroll-top');
+        window.addEventListener('scroll', () => {
+          if (window.scrollY > 500) {
+            scrollTopBtn.classList.add('show');
+          } else {
+            scrollTopBtn.classList.remove('show');
+          }
+        });
+      </script>
+    </a>
+  </body>
+</html>
